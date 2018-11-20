@@ -1,0 +1,126 @@
+body {
+  background-color: #333;
+  font-family: sans-serif;
+  font-size: 10px;
+  margin: 0 auto;
+}
+
+.container {
+  margin: 0 auto;
+  width: 360px;
+  height: 700px;
+}
+
+
+.route-data {
+  background-color: white;
+  width: 360px;
+  height: 600px;
+}  
+
+h1 { 
+  font-size: 20px;
+  color: white;
+  float: left;
+  font-display: roboto;
+}
+
+h3 {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+nav {
+  padding: 20px 0 15px 0px;
+  position: fixed;
+  background-color: black;
+  width: 360px;
+}
+
+span.circle {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  border: 1px solid #16559F;
+  background-color: #16559F;
+  padding: .25rem;
+  color: white;
+  display:inline-block
+}
+
+span.title{
+  font-size: 16px;
+}
+
+span.notfrequent{
+  color: red;
+  font-size: 14px;
+}
+
+span.running{
+  color: green;
+  font-size: 14px;
+}
+
+span.subtitle{
+  font-size: 12px;
+}
+
+.buslines {
+  padding-top: 73px;
+  margin-left: 20px;
+  font-size: 14px;
+  float: left;
+  text-align: center;
+}
+
+.destination{
+  padding-top: 73px;
+  margin-left: 30px;
+  font-size: 14px;
+  float: left;
+}
+
+.frequency {
+  padding-top: 73px;
+  margin-left: 25px;
+  float: left;
+  font-size: 14px;
+}
+
+
+.arrow-left {
+  float: left;
+  color: white;
+  font-size: 20px;
+  padding-right: 10px;
+  padding-left: 16px;
+}
+
+.refresh {
+  float: right;
+  color: white;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.direction {
+font-weight:bold;
+}
+
+.notfrequent {
+  color: red;
+  font-size: 14px;
+}
+
+
+ul li{
+  list-style-type: none; 
+  height: 45px;
+}
+
+ul li:first-child{
+  list-style-type: none; 
+  height: 33px;
+}
