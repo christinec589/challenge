@@ -5,18 +5,13 @@ body {
   margin: 0 auto;
 }
 
-.container {
-  margin: 0 auto;
+.buslist {
   width: 360px;
   height: 700px;
+  background-color: white;
+  padding-top: 95px;
 }
 
-
-.route-data {
-  background-color: white;
-  width: 360px;
-  height: 600px;
-}  
 
 h1 { 
   font-size: 20px;
@@ -25,72 +20,134 @@ h1 {
   font-display: roboto;
 }
 
+h2 {
+  font-size: 16px;
+  color: black;
+  margin-left: 10px;
+}
+
 h3 {
   font-size: 14px;
   font-weight: normal;
 }
 
+.statusbar{
+  width: 360px;
+  margin-bottom: 12px;
+}
+
+.statusbar img{
+  width: 100%;
+}
+
+.footerimage {
+  width: 360px;
+}
+
+.footerimage img{
+  width: 100%;
+}
+
 nav {
-  padding: 20px 0 15px 0px;
+  padding: 0px 0 20px 0px;
   position: fixed;
   background-color: black;
   width: 360px;
 }
 
-span.circle {
+li.number {
   border-radius: 50%;
   width: 25px;
   height: 25px;
   line-height: 25px;
   border: 1px solid #16559F;
   background-color: #16559F;
-  padding: .25rem;
+  padding: .4rem;
   color: white;
-  display:inline-block
+  text-align: center;
+  font-size: 14px;
 }
 
-span.title{
+li.reroutenumber {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  border: 1px solid red;
+  background-color: red;
+  padding: .4rem;
+  color: white;
+  text-align: center;
   font-size: 16px;
 }
 
-span.notfrequent{
-  color: red;
-  font-size: 14px;
-}
-
-span.running{
-  color: green;
-  font-size: 14px;
-}
-
-span.subtitle{
-  font-size: 12px;
-}
-
-.buslines {
-  padding-top: 73px;
-  margin-left: 20px;
-  font-size: 14px;
-  float: left;
+li.outnumber {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  border: 1px solid grey;
+  background-color: grey;
+  padding: .4rem;
+  color: lightgrey;
   text-align: center;
+  font-size: 16px;
 }
 
-.destination{
-  padding-top: 73px;
-  margin-left: 30px;
+ul.route {
+  display: flex;
+}
+
+ul.route li {
+  display: inline-block;
+  margin: 11px;
+  align-self: center;
+}
+
+li.data {
+font-size: 15px;
+font-weight: bolder;
+width: 45%;
+padding-left: 10px;
+}
+
+.subtitle {
+  font-size: 13px;
+  font-weight: lighter;
+  color: #757575;
+}
+
+.reroutesub{
+  font-size:13px;
+  font-weight: lighter;
+  color: red;
+}
+.outsub{
+  font-size:13px;
+  font-weight: lighter;
+  color: #757575;
+}
+
+li.frequency {
   font-size: 14px;
-  float: left;
+  color: green;
+  width: 25%;
 }
 
-.frequency {
-  padding-top: 73px;
-  margin-left: 25px;
-  float: left;
+ul li.outFrequency {
+  font-size: 12px;
+  color:  #757575;
+  width: 25%;
+  display: flex;
+}
+
+li.rerouteFreq {
   font-size: 14px;
+  color:  red;
+  width: 25%;
 }
 
-
-.arrow-left {
+.navicons {
   float: left;
   color: white;
   font-size: 20px;
@@ -98,29 +155,20 @@ span.subtitle{
   padding-left: 16px;
 }
 
-.refresh {
+.naviconsright {
   float: right;
   color: white;
   font-size: 20px;
-  margin-right: 20px;
+  padding-right: 10px;
+  padding-left: 16px;
 }
 
-.direction {
-font-weight:bold;
+.outFrequency i{
+  font-size: 20px;
+  align-self: center;
+  padding-right: 5px;
 }
 
-.notfrequent {
-  color: red;
-  font-size: 14px;
-}
-
-
-ul li{
-  list-style-type: none; 
-  height: 45px;
-}
-
-ul li:first-child{
-  list-style-type: none; 
-  height: 33px;
+.resumetext {
+  align-self: center;
 }

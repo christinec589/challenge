@@ -7,64 +7,73 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   </head>
-
-  <body>
-    <section class="container">
-      <nav>
-        <div class="arrow-left">
-          <i class="fas fa-arrow-left"></i>
-        </div>
-        <div class="title">
-            <h1>701 Washington/State</h1>
-          </div>
-        <div class="refresh">
-          <i class="fas fa-redo"></i>
-        </div>
-      </nav>
-      <section class="route-data">
-        <div class="buslines">
-            <ul class="buslines-list">
-              <li><span class="title">Line</span></li> 
-              <li><span class="circle">60</span></li>
-              <li><span class="circle">124</span></li>
-              <li><span class="circle">151</span></li>
-              <li><span class="circle">J14</span></li>
-              <li><span class="circle">124</span></li>
-              <li><span class="circle">6x</span></li>
-              <li><span class="circle">4</span></li>
-              <li><span class="circle">20</span></li>
-              <li><span class="circle">157</span></li>
-          </ul>
-        </div>
-        <div class="destination">
-         <ul class="destinations-list">
-            <li><span class="title">Destination</span></li>
-            <li><div class="direction">Randolph/Harbor Dr</div><span class="subtitle">East Bound</span></li>
-            <li><div class="direction">Navy Pier</div><span class="subtitle">East Bound</span></li>
-            <li><div class="direction">Devon/Clark</div><span class="subtitle">North Bound</span></li>
-            <li><div class="direction">103rd/Stony Island</div><span class="subtitle">South Bound</span></li>
-            <li><div class="direction">Navy Pier</div><span class="subtitle">South Bound</span></li>
-            <li><div class="direction">Jackson Park Express</div><span class="notfrequent">Reroute</span></li>
-            <li><div class="direction">Cottage Grove</div><span class="notfrequent">Out of Service</span></li>
-            <li><div class="direction">Madison</div><span class="notfrequent">Out of Service</span></li>
-            <li><div class="direction">Streeterville/Taylor</div><span class="notfrequent">Out of Service</span></li>
-         </ul>
-        </div>
-        <div class="frequency">
-         <ul class="frequency-list">
-           <li><span class="title">Frequency</span></li>
-           <li><span class="running">Every 20 Min</span></li>
-           <li><span class="running">Every 10 Min</span></li>
-           <li><span class="running">Every 16 Min</span></li>
-           <li><span class="running">Every 15 Min</span></li>
-           <li><span class="running">Every 10 Min</span></li>
-           <li>N/A</li>
-           <li><div class="notfrequent">Resumes</div><span class="notfrequent">12:10AM</span></li>
-           <li><div class="notfrequent">Resumes</div><span class="notfrequent">12:10AM</span></li>
-           <li><div class="notfrequent">Resumes</div><span class="notfrequent">6:00AM</span></li>
+ <body>
+    <header>
+        <nav>
+        <div class="statusbar"> <img src="images/statusbar.png" alt="status bar"></div> 
+          <div class="navicons"><i class="fas fa-arrow-left"></i></div>
+          <h1>701 Washington/State</h1>
+          <div class="naviconsright"><i class="fas fa-ellipsis-v"></i></div>
+          <div class="naviconsright"><i class="fas fa-redo"></i></div>
+        </nav>
+    </header>
+     <section class="buslist">
+        <h2>Bus Lines</h2>
+        <ul class="route">
+            <li class="number">60</li>
+            <li class="data">Randolph/Harbor Dr<div class="subtitle">Eastbound</div></li>
+            <li class="frequency"><i class="fas fa-rss"></i> 20 Min</li>
         </ul>
-       </div>
-      </section>
-    </section>
+        <ul class="route">
+            <li class="number">124</li>
+            <li class="data">Navy Pier<div class="subtitle">Eastbound</div></li>
+            <li class="frequency"><i class="fas fa-rss"></i> 10 Min</li>
+        </ul>
+
+        <ul class="route">
+            <li class="number">151</li>
+            <li class="data">Devon/Clark<div class="subtitle">Northbound</div></li>
+            <li class="frequency"><i class="fas fa-rss"></i> 16 Min</li>
+        </ul>
+        
+        <ul class="route">
+            <li class="number">J14</li>
+            <li class="data">103rd/Stony Island<div class="subtitle">Southbound</div></li>
+            <li class="frequency"><i class="fas fa-rss"></i> 15 Min</li>
+        </ul>
+        
+        <ul class="route">
+            <li class="number">124</li>
+            <li class="data">Navy Pier<div class="subtitle">Southbound</div></li>
+            <li class="frequency"><i class="fas fa-rss"></i> 10 Min</li>
+        </ul>
+
+        <ul class="route">
+                <li class="reroutenumber">6x</li>
+                <li class="data">Jackson Park Express<div class="reroutesub">Reroute</div></li>
+                <li class="rerouteFreq"><i class="fas fa-exclamation-circle"></i> N/A</li>
+        </ul>
+
+        <ul class="route">
+                <li class="outnumber">4</li>
+                <li class="data">Cottage Grove<div class="outsub">Out of Service</div></li>
+                <li class="outFrequency"><i class="fas fa-exclamation-triangle"></i><div class="resumetext">Resumes 12:10am</div></li>
+        </ul>
+
+        <ul class="route">
+                <li class="outnumber">20</li>
+                <li class="data">Madison<div class="outsub">Out of Service</div></li>
+                <li class="outFrequency"><i class="fas fa-exclamation-triangle"></i><div class="resumetext">Resumes 12:10am</div></li>
+        </ul>
+
+        <ul class="route">
+                <li class="outnumber">157</li>
+                <li class="data">Streeterville/Taylor<div class="outsub">Out of Service</div></li>
+                <li class="outFrequency"><i class="fas fa-exclamation-triangle"></i> <div class="resumetext">Resumes 6:00am</div></li>
+        </ul>
+     </section>
+   <footer>
+      <div class="footerimage"><img src="images/footer.png" alt="footer"></div>
+   </footer> 
   </body>
-</html>
+</html>  
