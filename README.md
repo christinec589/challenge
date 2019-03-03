@@ -7,4 +7,6 @@ UX work was done to research and build paper prototypes to test with real people
 
 This design was then coded for Android that incorporates the guidelines for the platform and the visual styling standard. 
 
+![BusyBus Screen](FrontendChallenge.png)
+
 * [**Coded Challenge**](https://christinec589.github.io/challenge/)
